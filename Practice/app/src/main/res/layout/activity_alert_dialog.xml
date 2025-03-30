@@ -7,4 +7,42 @@
     android:layout_height="match_parent"
     tools:context=".AlertDialogActivity">
 
+    <Button
+        android:id="@+id/btnAlertDialog1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:text="AlertDialog1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnAlertDialog2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/btnAlertDialog2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:text="AlertDialog2"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnAlertDialog3"
+        app:layout_constraintStart_toStartOf="@+id/btnAlertDialog1"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlertDialog1" />
+
+    <Button
+        android:id="@+id/btnAlertDialog3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="AlertDialog3"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btnAlertDialog2"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlertDialog2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
