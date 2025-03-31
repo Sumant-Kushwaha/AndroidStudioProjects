@@ -45,6 +45,10 @@ class MainActivity : AppCompatActivity() {
                 startActivity(it)
                 Toast.makeText(this, "RecylerViewOpened", Toast.LENGTH_SHORT).show()
             }
+            R.id.icFragment->Intent(this, FragmentActivity::class.java).also {
+                startActivity(it)
+                Toast.makeText(this, "Fragment opened", Toast.LENGTH_SHORT).show()
+            }
             R.id.icAddContact-> Toast.makeText(this, "Contact Added", Toast.LENGTH_SHORT).show()
             R.id.icFeedback-> Toast.makeText(this, "Feedback Submitted", Toast.LENGTH_SHORT).show()
             R.id.icFavourite-> Toast.makeText(this,"Favourite Added", Toast.LENGTH_SHORT).show()
