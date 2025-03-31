@@ -41,6 +41,10 @@ class MainActivity : AppCompatActivity() {
                 startActivity(it)
                 Toast.makeText(this, "Alert Dialog Opened....", Toast.LENGTH_SHORT).show()
             }
+            R.id.icRecyclerView->Intent(this, RecyclerViewActivity::class.java).also {
+                startActivity(it)
+                Toast.makeText(this, "RecylerViewOpened", Toast.LENGTH_SHORT).show()
+            }
             R.id.icAddContact-> Toast.makeText(this, "Contact Added", Toast.LENGTH_SHORT).show()
             R.id.icFeedback-> Toast.makeText(this, "Feedback Submitted", Toast.LENGTH_SHORT).show()
             R.id.icFavourite-> Toast.makeText(this,"Favourite Added", Toast.LENGTH_SHORT).show()

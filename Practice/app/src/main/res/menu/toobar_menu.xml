@@ -32,6 +32,11 @@
         app:showAsAction="never"/>
 
     <item
+        android:id="@+id/icRecyclerView"
+        android:title="RecyclerView"
+        app:showAsAction="never"/>
+
+    <item
         android:id="@+id/icExit"
         android:title="Exit"
         app:showAsAction="never"/>
