@@ -10,6 +10,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.fragment.app.Fragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,6 +26,17 @@ class MainActivity : AppCompatActivity() {
         val toolbar: Toolbar=findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
 
+        setCurrentFragment(FirstFragment())
+
+        findViewById<BottomNavigationView>(R.id.bottomNavigationView).setOnItemSelectedListener {
+            when(it.itemId){
+                R.id.icHome->setCurrentFragment(FirstFragment())
+                R.id.icTelephone->setCurrentFragment(SecondFragment())
+                R.id.icSetting->setCurrentFragment(ThirdFragment())
+            }
+            true
+        }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -34,7 +47,10 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.icExit->finish()
-            R.id.icAlertDialog-> Intent(this, AlertDialogActivity::class.java).also {
+            R.id.icAlertDialog-> Intent(this, AlertDialog::class.java).also {
+                startActivity(it)
+            }
+            R.id.icSpinner-> Intent(this, Spinner::class.java).also {
                 startActivity(it)
             }
             R.id.icFeedback-> Toast.makeText(this, "Feedback Submitted", Toast.LENGTH_SHORT).show()
@@ -42,5 +58,13 @@ class MainActivity : AppCompatActivity() {
             R.id.icAddContact->Toast.makeText(this, "Contact Added", Toast.LENGTH_SHORT).show()
         }
         return true
+    }
+
+    private fun setCurrentFragment(fragment:Fragment){
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.flFragment,fragment)
+            addToBackStack(null)
+            commit()
+        }
     }
 }
