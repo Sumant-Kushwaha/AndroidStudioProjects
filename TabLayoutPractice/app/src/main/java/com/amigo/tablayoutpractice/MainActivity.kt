@@ -1,5 +1,6 @@
 package com.amigo.tablayoutpractice
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -33,6 +34,9 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.icExit->finish()
+            R.id.icAlertDialog-> Intent(this, AlertDialogActivity::class.java).also {
+                startActivity(it)
+            }
             R.id.icFeedback-> Toast.makeText(this, "Feedback Submitted", Toast.LENGTH_SHORT).show()
             R.id.icFavourite->Toast.makeText(this, "Favourite Added", Toast.LENGTH_SHORT).show()
             R.id.icAddContact->Toast.makeText(this, "Contact Added", Toast.LENGTH_SHORT).show()
