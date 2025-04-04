@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/Cb_Rb"
+        android:title="CB_Rb"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/toast"
+        android:title="Toast"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/intent"
+        android:title="Intent"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/passingData"
+        android:title="Data Passing"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/permission"
+        android:title="Permission"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/implicitIntent"
+        android:title="Implicit Intent"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/toolBar"
+        android:title="Tool Bar"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/alertDialog"
+        android:title="Alert Dialog"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/spinner"
+        android:title="Spinner"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/recyclerView"
+        android:title="Recycler View"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/fragment"
+        android:title="Fragment"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/"
+        android:title="CB_Rb"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/Cb_Rb"
+        android:title="CB_Rb"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/Cb_Rb"
+        android:title="CB_Rb"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/Cb_Rb"
+        android:title="CB_Rb"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/Cb_Rb"
+        android:title="CB_Rb"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/Cb_Rb"
+        android:title="CB_Rb"
+        app:showAsAction="never" />
+
+
+</menu>
